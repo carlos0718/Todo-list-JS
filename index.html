@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="app.js"></script>
+</head>
+
+<body class="bg-violet-200 font-mono">
+    <main class="m-14 border-4 border-indigo-500/50">
+        <section class="container mx-auto p-10">
+            <label class="relative block">
+                <span class="sr-only">Add</span>
+                <input class="placeholder:italic placeholder:text-purple-400 block bg-purple-300 w-full border border-indigo-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                       placeholder="Add Task..." type="text" name="add" id="input-task" />
+                <button class="absolute top-2 right-4" id="clear-input">❌</button>
+            </label>
+        </section>
+        <p class="text-2xl text-center text-purple-400 font-bold">TO-DO LIST</p>
+        <section class="container mx-auto p-10" >
+            <ul class="divide-y divide-purple-300" id="add-task">
+                <!-- completed in js -->
+            </ul>
+        </section>
+    </main>
+
+</body>
+
+</html>
