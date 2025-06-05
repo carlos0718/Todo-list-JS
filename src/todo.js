@@ -20,13 +20,13 @@ class Todo {
 	readFromStorage() {
 		if (taskStorage.length > 0) {
 			taskStorage.forEach((task) => {
-				addTask.innerHTML += `<li class="py-4 flex justify-between items-center" id=${task.id}>
+				addTask.innerHTML += `<il class="py-4 flex justify-between items-center" id=${task.id}>
 							<span class="text-lg font-mediun text-blue-500">${task.name}</span>
 							<div class="flex">
 								<button class="text-white rounded-md px-2 py-1 mr-2">✅</button>
 								<button class="text-white rounded-md px-2 py-1" onclick=deleteTaskFromStorage(${task.id})>❌</button>
 							</div>
-						</li>
+						</il>
 				`;
 			});
 		}
